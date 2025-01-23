@@ -1,0 +1,73 @@
+<div class="container-projects rounded-4 border border-dark border-3 mb-3">
+  <div class="text-center">
+    <p class="fs-1 text-light">Living Atlas (Capstone)</p>
+    <p class = "fs-5 text-light">January 2023 - December 2023</p>
+  </div>
+</div>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <strong>Description</strong>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Developed a web application that provided the <abbr title="Center for Environmental Research, Education and Outreach">CEREO</abbr> group at WSU a platform to create, read, update, and delete environmental data relating to rivers, watersheds, etc. This application facilitated data visualization through the use of a card and map system that integrated every marker on the map to its corresponding card object in order to deliver an easily accessible interface. Through the use of various categories of filtering, map legends, and multiple <abbr title="Geographic Information System">GIS</abbr> layers, my team and I were able to deliver a fully functional web application that not only met, but exceeded sponsor standards and expectations. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <strong>My Work + Techstack</strong>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        As part of the front end team, I was responsible for all features relating to the mappable aspects of the <code>React</code> application. In order to implement a map that would satisfy all of the functional requirements, I used various JavaScript libraries inside of the <code>mapbox-gl</code> opensource API.Through the use of this API, I was able to achieve essential features, such as plotting markers, displaying rivers and watersheds as <abbr title="Geographic Information System">GIS</abbr> layers, card and marker integration, and polygon filtering. Using a <strong>RESTful API</strong> backend designed using various <code>Python</code> libraries, I was able to retrieve and update marker and geographical shape data from a <strong>relational database</strong> that resembled a <code>.geoJSON</code> format for storage. Then, each marker was integrated with its corresponding card, in order to facilate the navigation of large datasets and provide seamless filtering. Finally, throughout the entirity of this project, I was able to expand on my software documentation and web app deployment experience. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <strong>Visuals</strong>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Image below shows the graphical user interface of the application and features listed above in action.
+        <div class="row align-items-start">
+
+          <div class="col">
+            <div class="text-center mb-3 rounded">
+              <%= image_tag ("/assets/LivingAtlas_GUI.png"),class:"rounded",style: 'width: 100%; height: auto;'%> 
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="text-center mb-3 rounded">
+              <%= image_tag ("/assets/LivingAtlas_Marker_GUI.png"),class:"rounded",style: 'width: 75%; height: auto;'%> 
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <%= link_to 'https://github.com/f-alvarezpenate/LivingAtlasFrontend', class:"btn btn-dark mt-4 mb-2", target: '_blank' do %> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"> 
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+    </svg>
+    Code
+  <%end%>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>

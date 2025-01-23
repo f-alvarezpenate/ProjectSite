@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+:root {
+  --bs-body-font-family:"Markazi Text", sans-serif;
+}
+
+html {
+  font-size: 20px;
+}
+
+code {
+  font-size: 14px;
+}
+
+.accordion {
+  --bs-accordion-btn-bg: #346f6c;
+}
+
+.accordion {
+  --bs-accordion-active-bg: black;
+  --bs-accordion-active-color: #346f6c; 
+}
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion {
+  --bs-accordion-bg: #346f6c;
+  --bs-accordion-color: black;
+}
+
+/*code {
+	color: #d9534f;
+}*/
+
+.accordion-body {
+	background-color: #E6E6E6;
+}
+
+/*.project-subtext {
+	color:black;
+}*/
+
+.container-home {
+  background-color: #346f6c; 
+/*  346f4e*/
+}
+
+.container-projects {
+  background-color: #346f6c;
+}
+
+.container-about {
+  background-color: #346f6c;
+/*  34556f*/
+}
+
+.btn-header {
+  background-color: #346f6c;
+}

@@ -1,0 +1,61 @@
+<div class="container-projects rounded-4 border border-dark border-3 mb-3">
+  <div class="text-center">
+    <p class="fs-1 text-light">Spreadsheet</p>
+    <p class = "fs-5 text-light">January 2023 - May 2023</p>
+  </div>
+</div>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <strong>Description</strong>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Created a GUI for a spreadsheet application that resembles a simpler version of Microsoft Excel or Google Sheets. This application allows users to enter data, change cell properties, use formulas, and perform various arithmetic calculations. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <strong>My Work + Techstack</strong>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        I was responsible for the <strong>full stack</strong> development of this application from scratch. The application was designed and implemented using <code>Windows Forms</code> in <code>.NET</code> prioritizing <strong>test-driven development</strong> and <strong>object-oriented programming</strong> principles, such as <strong>encapsulation</strong>, <strong>inheritance</strong>, and <strong>abstraction</strong> that promoted the use of clean, reusable, and maintainable code. With the use of <abbr title="test driven development">TDD</abbr>, I was able to think about the functionality of each method before it was actually implemented. This allowed me to test and refactor the implementation of my methods in a repeating cycle. I was able to demonstrate my knowledge of inheritence and abstraction by making every spreadsheet cell derive from an abstract Cell class in order to simplify complexities and focus on the essential functionality that a cell should have. Arithmetic, cell value assignment, and circular reference prevention are all handled through the use of an expression tree. The formula entered is converted into postfix notation and inserted into the tree for perform the calculation following order of operations. Whenever a reference is made to another cell, a dictionary containing all references is updated with this information. If there's no circular reference (i.e. a cell referencing its own value in a nested calculation) found in the dictionary, then the corresponding cell value is retrieved and used for the calculation. In the event that a referenced cell is changed, an event triggers that lets know all of its dependent cells to update their calculations with the new value. Additionally, I implemented functionality to edit cell color, load and save spreadsheets, and the ability for custom operator support. Spreadsheets are able to be saved and loaded through <code>xml</code> that stores the data. In order to simulate the environment in which a different developer would like to make some additions to the spreadsheet functionality, I added custom operator support via <strong>dynamic-link-libraries</strong> in order to perform more complex arithmetic.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <strong>Visuals</strong>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Image below shows the graphical user interface of the application and features listed above in action. 
+        <div class="text-center mb-3 rounded">
+          <%= image_tag ("/assets/Spreadsheet_GUI.png"),class:"rounded",style: 'width: 80%; height: auto;'%> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <%= link_to 'https://github.com/f-alvarezpenate/ObjectOrientedPrinciples', class:"btn btn-dark mt-4 mb-2", target: '_blank' do %> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"> 
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+    </svg>
+    Code
+  <%end%>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>

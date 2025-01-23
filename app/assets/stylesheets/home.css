@@ -1,0 +1,15 @@
+.centered-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Adjust as needed */
+}
+
+.centered-link {
+  text-decoration: none; /* Optional: remove underline from link */
+  color: #007bff; /* Optional: set link color */
+}
+
+.centered-link:hover {
+  color: #0056b3; /* Optional: set link color on hover */
+}
