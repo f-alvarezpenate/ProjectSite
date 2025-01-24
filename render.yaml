@@ -1,8 +1,8 @@
-# databases:
-#   - name: mysite
-#     databaseName: mysite
-#     user: mysite
-#     plan: free
+databases:
+  - name: mysite
+    databaseName: mysite
+    user: mysite
+    plan: free
 
 services:
   - type: web
@@ -18,5 +18,6 @@ services:
           name: mysite
           property: connectionString
       - key: RAILS_MASTER_KEY
-        sync:false- key: WEB_CONCURRENCY
+        sync: false
+      - key: WEB_CONCURRENCY
         value: 2 # sensible default
